@@ -14,12 +14,35 @@
               margin-bottom: 5px;
               float:right;
               position: absolute;
-  left: 550px;
-  top: 105px;
+  left: 540px;
+  top: 110px;
   z-index: +1;
             }
-            
+            h1 {
+                display: block;
+  font-size: 2.5em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0px;
+  margin-right: 0;
+  font-weight: bold;  
+  text-indent: 100px
+  
+            }
+            h1 {
+                border-color: purple;
+                border-width: .25em;
+                border-style:none;
+                border-radius: 5px;
+            }
+            footer {
+              border-radius: 5px;  
+            }
+            h2 {
+                text-indent: 10px
+            }
             </style>
+            
 </head>
 
 <body>
@@ -29,7 +52,8 @@
 
 <main>
         
-        <h1  style="background-color:powderblue; text-align: center"> Beau M. Black</h1> 
+        <h1 style= "background-color:dodgerblue;"> Beau M. Black
+        </h1> 
         <div class="polaroid">
                 <img src="/images/beau.jpeg" alt="A smiling picture of Beau Black" style="width:100%">
                 
@@ -37,7 +61,7 @@
               </div>
         
 <h2>CIT 230: Assignment Portal</h2>
-<p>-------------------------------------------------------------------------------------</p>
+<hr>
 <ul>
 <li><nav>Lesson 02: <a href="url">Assignment Link</a></nav></li>
 <li><nav>Lesson 03: <a href="url">Assignment Link</a></nav></li>
@@ -45,11 +69,15 @@
 </ul>
 </main>
 
-<footer style="background-color:powderblue; text-align: center">
-    2020 | Beau M. Black | Idaho | BYUI Online Learning
-    
+<footer style="background-color:dodgerblue; text-align: center">
+    © 2020 | Beau M. Black | Idaho | <u>BYUI Online Learning</u>
+    <p style="color:black">Last Updated: <span id="demo"></span>.</p>
+
+<script>
+document.getElementById("demo").innerHTML = document.lastModified;
+</script>
 </footer>
-<var>string = document.lastModified;</var> 
+
 </body>
 
 </html>
