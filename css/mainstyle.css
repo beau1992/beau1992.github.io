@@ -30,15 +30,18 @@ body {margin:10px;}
                 border-style:none;
                 border-radius: 5px;
                 color:white;
+                font-family: Montserrat;
             }
             footer {
                 color:white;
               border-radius: 5px;  
               background-color:rgb(35, 112, 255); 
               text-align: center;
+              font-family: Montserrat;
             }
             h2 {
                 text-indent: 10px;
+                font-family: Montserrat;
             }
             a:visited {
                 color:white;
@@ -54,4 +57,7 @@ body {margin:10px;}
            }
            .updated {
             color:white;
+           }
+           body {
+               font-family: "Open Sans", sans-serif;
            }
