@@ -44,7 +44,7 @@ body {margin:10px;}
                 font-family: Montserrat;
             }
             a:visited {
-                color:white;
+                color:black;
             }
            footer {
                clear: both;
@@ -61,3 +61,7 @@ body {margin:10px;}
            body {
                font-family: "Open Sans", sans-serif;
            }
+           header {
+            font-size: 3.5vw;
+        }
+       
