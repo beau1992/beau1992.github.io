@@ -1,8 +1,9 @@
 @import "/css/normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
 
 body {
     font-size: 16px;
-    font-family: "Sansita", Ubuntu, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 /* phone or baseline views
 *****************************/
@@ -12,19 +13,20 @@ main {
 }
 h2 {
     color: black;
+    
 }
 
 
 main {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 1rem;
+    font-size: rem;
   }
   main section {
-      margin: 0.25rem;
-      border-radius: 1rem solid rgb(255, 255, 255);
+      margin: .25rem;
+      border-radius: 1rem solid rgba(255, 255, 255, 0.795);
       padding: 0 1rem;
-      background-color: rgb(255, 255, 255);
+      background-color: rgba(255, 255, 255, 0.795);
     }
     section:nth-child(2) {
         display: block;
@@ -33,32 +35,32 @@ main {
     }
     section:nth-child(1) {
         display: block;
-        margin: 0.5rem;
+        margin: .5rem;
         border-radius: 1em;
     }
     section:nth-child(3) {
         display: block;
-        margin: 0.5rem;
+        margin: .5rem;
         border-radius: 1em;
     }
     
     h1,h2,h3,h4,h5,h6 {
-        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-        margin: 1em 1em 1em 0em;
+        font-family: 'Montserrat', 'sans-serif';
+        margin: 1em 1em 2em 0em;
     }
     
 .main-container {
     max-width: 775px;
-    margin: 1.3em auto 1.3em auto;
-    padding: 1.2em;
+    margin: 1em auto 1em auto;
+    padding: 1em;
     border-radius: 1em;
     background-color: rgb(35, 112, 255);
 }
 .title-header {
-    font-size: 3.5vw;
-    padding: 1em;
-    margin: .5em 0 .5em 0;
-    background-color: white;
+    font-size: 4vw;
+    padding: 2em;
+    margin: 1em 0 1em 0;
+    background-color: rgba(255, 255, 255, 0.795);
     border-radius: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -67,4 +69,18 @@ main {
     border-radius: 1em;
     width: 100%;
     border: .2em #bbbbbb;
+}
+.design-footer {
+    font-size: 1em;
+    padding: 2em;
+    margin: 1em 0 1em 0;
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+.updated {
+    color:black;
 }

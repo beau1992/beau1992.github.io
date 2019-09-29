@@ -37,7 +37,7 @@ body {margin:10px;}
               border-radius: 5px;  
               background-color:rgb(35, 112, 255); 
               text-align: center;
-              font-family: Montserrat;
+              font-family: "Montserrat";
             }
             h2 {
                 text-indent: 10px;
@@ -56,7 +56,7 @@ body {margin:10px;}
             width:100%;
            }
            .updated {
-            color:white;
+            color:black;
            }
            body {
                font-family: "Open Sans", sans-serif;
