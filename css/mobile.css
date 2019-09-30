@@ -20,7 +20,7 @@ h2 {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: rem;
+    font-size: 1rem;
   }
   main section {
       margin: .25rem;
