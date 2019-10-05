@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: rgb(49, 96, 110);
@@ -42,16 +45,27 @@
   }
   .typography {
       text-align: center;
-     margin: 8em;
+     margin: 1.5em;
       font-size: 1em;
   }
   .target-audience {
       text-align: right;
-      
+      margin: 1.5em;
       font-size: 1em;
   }
   .color-scheme {
       text-align: left;
       font-size: 1em;
+      margin: 1.5em;
+      
   }
-  
+  .site-purpose {
+      font-size: 1em;
+      margin: 1em;
+  }
+  main {
+      font-family: "montserrat", sans-serif;
+  }
+  h1, h2, h3 {
+    font-family: "montserrat", sans-serif;
+  }
