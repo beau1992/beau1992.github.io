@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
-@import url('font-family: 'Lato', sans-serif');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -32,7 +32,7 @@
   .logo {
       height: 100px;
       float: right;
-      margin: -9.5em .3em 1em 2em;
+      margin: -13em .3em 1em 2em;
   }
   .title-header {
       font-size: 200%;
@@ -71,6 +71,9 @@
   }
   h2, h3 {
       font-family: 'Lato', sans-serif;
+  }
+  h4, h5, h6 {
+      font-family: sans-serif;
   }
 
   .colors {
