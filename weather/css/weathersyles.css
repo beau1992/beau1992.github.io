@@ -32,7 +32,7 @@
   .logo {
       height: 100px;
       float: right;
-      margin: -13em .3em 1em 2em;
+      margin: -14em .3em 1em 2em;
   }
   .title-header {
       font-size: 200%;
@@ -78,4 +78,10 @@
 
   .colors {
       width: 30%;
+  }
+  .website {
+      color:#ddd;
+      background-color: rgb(49, 96, 110);
+      padding: 10px 5px;
+      font-family: sans-serif;
   }
