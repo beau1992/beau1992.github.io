@@ -24,11 +24,6 @@
     color: black;
   }
   
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: rgb(49, 96, 110);
-    color: white;
-  }
   .logo {
       height: 100px;
       float: right;
@@ -84,4 +79,8 @@
       background-color: rgb(49, 96, 110);
       padding: 10px 5px;
       font-family: sans-serif;
+  }
+  .pagelinks {
+      
+      justify-content: space-evenly;
   }
