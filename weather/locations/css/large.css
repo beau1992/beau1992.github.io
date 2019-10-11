@@ -8,3 +8,6 @@
         grid-column: span 1;
     }
 }
+.flex {
+    flex-direction: row;
+}
