@@ -147,6 +147,10 @@ nav ul li a:hover {
     content: "";
     display: table;
     clear: both;
+    
+    
 }
+
+
 nav ul.hide {display: none;}
 main p {font-size: .95em;}
