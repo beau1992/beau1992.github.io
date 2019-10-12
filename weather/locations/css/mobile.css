@@ -98,7 +98,7 @@ display: flex;
 }
 .flex {
     display: flex;
-    flex-direction: column;
+    
 }
 .placeholder {
     background-color: gray;
@@ -150,7 +150,6 @@ nav ul li a:hover {
     
     
 }
-
 
 nav ul.hide {display: none;}
 main p {font-size: .95em;}

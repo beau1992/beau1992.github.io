@@ -15,10 +15,12 @@ nav button {
     display: none;
 }
 nav ul {
-   margin-left: 2%; 
+   margin-left: 0; 
+   display: flex;
+   
 }
 nav ul li {
-    float: left;
+    flex: 1 1 auto;
 }
 nav ul li a {
    border: none; 
