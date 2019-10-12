@@ -110,3 +110,43 @@ display: flex;
 .glance {
     text-align: center;
 }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    
+}
+
+nav ul li a {
+display: block;
+padding: .8rem 2%;
+text-decoration: none;
+border-top: 1px solid rgba(0,0,0,0.3);
+color: white;
+background-color: grey;
+}
+
+
+nav ul li .active a {
+    background-color: rgba(0,0,0,0.2); 
+    color: #fff;
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+/*--------- Clearfix: Force an Eleement not to collapse
+--------*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+nav ul.hide {display: none;}
+main p {font-size: .95em;}

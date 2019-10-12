@@ -13,6 +13,8 @@
     <script src="/js/on-page-load.js" async></script>
     <link rel="stylesheet" href="/weather/locations/css/weatherstyles.css"
     media="screen">
+    <script src="/weather/locations/js/scripts.js" async></script>
+
 </head>
 <body>
     <div class="main-container">
@@ -25,14 +27,17 @@
           <h2 class="website">rainraingoaway.org</h2></div>
                  
             </div>
-            <div class="topnav">
-                <a href="/index.html">Home</a>
-                <a href="/weather/locations/preston.html">Preston</a>
-                <a href="#soda-springs">Soda Springs</a>
-                <a href="#fish-haven">Fish Haven</a>
-                <a href="#storm-center">Storm Center</a>
-                <a href="#gallery">Gallery</a>
-              </div> 
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                <li><a href="/index.html">Home</a></li>
+                <li class="active"> <a href="/weather/locations/preston.html">Preston</a></li>
+                <li> <a href="#soda-springs">Soda Springs</a></li>
+                <li> <a href="#fish-haven">Fish Haven</a></li>
+                <li> <a href="#storm-center">Storm Center</a></li>
+                <li> <a href="#gallery">Gallery</a></li>
+            </ul>  
+            </nav> 
         </header>
 <main>
     <section class="cityname">
