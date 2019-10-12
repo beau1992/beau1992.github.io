@@ -132,12 +132,12 @@ padding: .8rem 2%;
 text-decoration: none;
 border-top: 1px solid rgba(0,0,0,0.3);
 color: white;
-background-color: grey;
+background-color: #595959;
 }
 
 
-nav ul li .active a {
-    background-color: rgba(0,0,0,0.2); 
+nav ul li.active a {
+    background-color: #0000b3; 
     color: #fff;
 }
 nav ul li a:hover {
