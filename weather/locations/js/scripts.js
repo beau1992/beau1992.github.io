@@ -2,6 +2,7 @@ function toggleMenu() {
 
     document.getElementById("primaryNav").classList.toggle("hide");
 }
+
 (function() {
     
 
@@ -15,9 +16,20 @@ function toggleMenu() {
     Date.prototype.getDayName = function() {
         return days[ this.getDay() ];
     };
+    
+
+    
 })();
 
 var now = new Date();
 
 var day = now.getDayName();
 var month = now.getMonthName();
+var date = now.getDate();
+var year = now.getFullYear();
+
+document.getElementById("todaysdate").innerHTML=day + ", " + date + " " + month + " " +
+    year;
+
+
+console.log(day + month + date + year);

@@ -98,6 +98,8 @@ display: flex;
 }
 .flex {
     display: flex;
+    flex-direction: column;
+
     
 }
 .placeholder {
@@ -151,5 +153,5 @@ nav ul li a:hover {
     
 }
 
-nav ul.hide {display: none;}
+.hide {display: none;}
 main p {font-size: .95em;}
