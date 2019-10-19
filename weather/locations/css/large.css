@@ -1,16 +1,16 @@
 /* Desktop Views ********************/
 @media only screen and (min-width: 900px) {
-    main {
+   /* main {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    main secton:nth-child(3) {
+   /* main secton:nth-child(3) {
         grid-column: span 1;
     }
 }
-.flex {
+/*.flex {
     flex-direction: row;
-}
+}*/
 nav button {
     display: none;
 }
@@ -29,4 +29,4 @@ nav ul li a {
 }
 .hide {
     display: block;
-}
+}}

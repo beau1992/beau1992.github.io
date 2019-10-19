@@ -8,7 +8,7 @@ body {
 /* phone or baseline views
 *****************************/
 main {
-    max-width: 760px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -23,13 +23,13 @@ main {
     grid-template-columns: 1fr;
     font-size: 1rem;
   }
-  main section {
+  /* main section {
       margin: .25rem;
       padding: 0 1rem;
       background-color: rgba(255, 255, 255, 0.795);
       border-radius: 1em;
     }
-    section:nth-child(2) {
+     section:nth-child(2) {
         display: block;
         margin: 0.5rem;
         border-radius: 1em;
@@ -44,6 +44,7 @@ main {
         margin: .5rem;
         border-radius: 1em;
     }
+    */
     
     h1,h2,h3,h4,h5,h6 {
         font-family: 'Montserrat', 'sans-serif';
@@ -88,18 +89,21 @@ main {
 }
 .cityname {
 display: flex;
+flex-direction: column;
+background-color: antiquewhite;
+border-radius: 15px;
 }
 
 .boxes {
     border: solid 1px black;
-    flex: 1;
+    
     text-align: center;
-    background-color: beige;
+    
 
 }
 .flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     
 }
@@ -304,15 +308,35 @@ main p {font-size: .95em;}
 
 }
 
-
+#precip {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
 #precipcontainer {
   height: 275px;
   width: 275px;
   position: relative;
+  
 }
 #mid {
   position: absolute;
   font-size: 3em;
   top: 37%;
   left: 44%;
+}
+.columns {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.columns > section, .columns > div {
+    width: 275px;
+    height: 275px;
+    margin: .5em;
+    background-color: antiquewhite;
+    border-radius: 15px;
+   
+}
+#condition {
+    flex: 0 0 auto;
 }

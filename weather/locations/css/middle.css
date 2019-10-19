@@ -1,11 +1,11 @@
 /* Tablet Views *****************/
-@media only screen and (min-width: 37.5em) {
-    main {
+@media only screen and (min-width: 600px) {
+    /* main {
         grid-template-columns: 1fr 1fr;
     }
    main section:nth-child(3) {
         display: block;
-}
+} */
 main picture {
     display: block;
 }
@@ -14,12 +14,13 @@ main section picture img {
     height: auto;
    
 }
-}
+
 .flex{
     flex-wrap: wrap;
     justify-content: center;
     
   }
+}
 
 
    
