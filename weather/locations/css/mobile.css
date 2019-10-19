@@ -94,6 +94,7 @@ display: flex;
     border: solid 1px black;
     flex: 1;
     text-align: center;
+    background-color: beige;
 
 }
 .flex {
@@ -155,3 +156,163 @@ nav ul li a:hover {
 
 .hide {display: none;}
 main p {font-size: .95em;}
+
+#ballp {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: orangered;
+    position: absolute;
+    grid-column: 10/span 2;
+    grid-row: 2/span 2;
+    z-index: -1;
+    place-self: center;
+}
+#circlep {
+    background: radial-gradient(circle, transparent 40%, gray 40%);
+    border-radius: 100%;
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    top: 19%;
+    left: 19%;
+  
+}
+#o1 {
+    grid-column: 10/span 2;
+    grid-row: 2/span 2;
+}
+#o2 {
+    grid-column: 12/span 2;
+    grid-row: 4/span 2;
+}
+#o3 {
+    grid-column: 13/span 2;
+    grid-row: 7/span 2;
+}
+#o4 {
+    grid-column: 12/span 2;
+    grid-row: 10/span 2;
+}
+#o5 {
+    grid-column: 10/span 2;
+    grid-row: 12/span 2;
+}
+#o6 {
+    grid-column: 7/span 2;
+    grid-row: 13/span 2;
+}
+#o7 {
+    grid-column: 4/span 2;
+    grid-row: 12/span 2;
+}
+#o8 {
+    grid-column: 2/span 2;
+    grid-row: 10/span 2;
+}
+#o9 {
+    grid-column: 1/span 2;
+    grid-row: 7/span 2;
+}
+#o10 {
+    grid-column: 2/span 2;
+    grid-row: 4/span 2;
+}
+#o11 {
+    grid-column: 4/span 2;
+    grid-row: 2/span 2;
+}
+#o12 {
+    grid-column: 7/span 2;
+    grid-row: 1/span 2;
+}
+#i1 {
+    grid-column: 10/span 2;
+    grid-row: 2/span 2;
+}
+#i2 {
+    grid-column: 12/span 2;
+    grid-row: 4/span 2;
+}
+#i3 {
+    grid-column: 13/span 2;
+    grid-row: 7/span 2;
+}
+#i4 {
+    grid-column: 12/span 2;
+    grid-row: 10/span 2;
+}
+#i5 {
+    grid-column: 10/span 2;
+    grid-row: 12/span 2;
+}
+#i6 {
+    grid-column: 7/span 2;
+    grid-row: 13/span 2;
+}
+#i7 {
+    grid-column: 4/span 2;
+    grid-row: 12/span 2;
+}
+#i8 {
+    grid-column: 2/span 2;
+    grid-row: 10/span 2;
+}
+#i9 {
+    grid-column: 1/span 2;
+    grid-row: 7/span 2;
+}
+#i10 {
+    grid-column: 2/span 2;
+    grid-row: 4/span 2;
+}
+#i11 {
+    grid-column: 4/span 2;
+    grid-row: 2/span 2;
+}
+#i12 {
+    grid-column: 7/span 2;
+    grid-row: 1/span 2;
+}
+#mid {
+    grid-column: 7/span 2;
+    grid-row: 5/span 2;
+}
+#onumbers {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5em;
+  position: absolute;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+}
+#inumbers {
+  display: grid;
+  width: 58%;
+  height: 58%;
+  left: 21%;
+  top: 21%;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  align-items: stretch;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+
+}
+
+
+#precipcontainer {
+  height: 275px;
+  width: 275px;
+  position: relative;
+}
+#mid {
+  position: absolute;
+  font-size: 3em;
+  top: 37%;
+  left: 44%;
+}
