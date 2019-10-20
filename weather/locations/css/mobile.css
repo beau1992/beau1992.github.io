@@ -701,6 +701,8 @@ main p {font-size: .95em;}
     margin: .5em;
     background-color: antiquewhite;
     border-radius: 15px;
+    
+    
    
 }
 #temperature {
@@ -708,15 +710,16 @@ main p {font-size: .95em;}
 }
 #degrees {
     font-size: 4em;
-    margin: .1em;
+    margin: 0;
 }
 #high {
     font-size: 2em;
     color: red;
-    display: block;
+    display: inline-block;
+    margin: .5em;
 }
 #low {
     font-size: 2em;
     color: blue;
-    display: block;
+    display: inline-block;
 }
