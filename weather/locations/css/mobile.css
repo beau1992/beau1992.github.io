@@ -290,7 +290,7 @@ main p {font-size: .95em;}
     grid-column: 7/span 2;
     grid-row: 5/span 2;
 }
-#onumbers {
+#ponumbers {
   display: grid;
   width: 100%;
   height: 100%;
@@ -301,7 +301,7 @@ main p {font-size: .95em;}
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: repeat(14, 1fr);
 }
-#inumbers {
+#pinumbers {
   display: grid;
   width: 58%;
   height: 58%;
@@ -469,7 +469,7 @@ main p {font-size: .95em;}
     grid-column: 7/span 2;
     grid-row: 5/span 2;
 }
-#onumbers {
+#conumbers {
   display: grid;
   width: 100%;
   height: 100%;
@@ -480,7 +480,7 @@ main p {font-size: .95em;}
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: repeat(14, 1fr);
 }
-#inumbers {
+#cinumbers {
   display: grid;
   width: 58%;
   height: 58%;
@@ -648,7 +648,7 @@ main p {font-size: .95em;}
     grid-column: 7/span 2;
     grid-row: 5/span 2;
 }
-#onumbers {
+#tonumbers {
   display: grid;
   width: 100%;
   height: 100%;
@@ -659,7 +659,7 @@ main p {font-size: .95em;}
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: repeat(14, 1fr);
 }
-#inumbers {
+#tinumbers {
   display: grid;
   width: 58%;
   height: 58%;
@@ -674,7 +674,7 @@ main p {font-size: .95em;}
 
 }
 
-#temp {
+.temp {
     height: 100%;
     
     border-radius: 15px;
@@ -685,7 +685,7 @@ main p {font-size: .95em;}
   position: relative;
   
 }
-#mid {
+#tmid {
   position: absolute;
   font-size: 3em;
   top: 37%;
