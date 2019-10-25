@@ -3,17 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Beau Black">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Progressive Image Loading</title>
+    <script defer src="/weather/js/weather-images.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/weather/css/weather-images.css">
 </head>
 <body>
     <header>
         <h1>Weather Images</h1>
     </header>
+    <nav>
+        <a href="/index.html">Home</a>
+    </nav>
     <main>
+       <div class="weatherimg">
+        <section>
         <picture>
-            <img data-src="../images/clear.jpg" alt="Picture of a clear sky">
+            <source media="(min-width: 600px)" srcset="../images/clear600.jpg">
+            <img src="/weather/images/placeholder300.jpg" data-src="../images/clear400.jpg" 
+            alt="Picture of a clear sky">
         </picture>
+        </section>
+        <section>
+            <picture>
+                <source media="(min-width: 600px)" srcset="../images/clouds600.jpg">
+                <img src="/weather/images/placeholder300.jpg" data-src="../images/clouds400.jpg" 
+                alt="Picture of a clear sky">
+            </picture>
+            </section>
+            <section>
+                <picture>
+                    <source media="(min-width: 600px)" srcset="../images/fog600.jpg">
+                    <img src="/weather/images/placeholder300.jpg" data-src="../images/fog400.jpg" 
+                    alt="Picture of a clear sky">
+                </picture>
+                </section>
+                <section>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="../images/rain600.jpg">
+                        <img src="/weather/images/placeholder300.jpg" data-src="../images/rain400.jpg" 
+                        alt="Picture of a clear sky">
+                    </picture>
+                    </section>
+                    <section>
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="../images/snow600.jpg">
+                            <img src="/weather/images/placeholder300.jpg" data-src="../images/snow400.jpg" 
+                            alt="Picture of a clear sky">
+                        </picture>
+                        </section>
+                    </div>
     </main>
 </body>
 </html>
