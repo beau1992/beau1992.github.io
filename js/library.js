@@ -1,3 +1,5 @@
+//copied to functions.js//
+
 document.addEventListener("DOMContentLoaded", function(){
     let lastMod = document.lastModified;
     document.getElementById("modDate").innerHTML = lastMod;

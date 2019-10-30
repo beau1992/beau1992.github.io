@@ -1,7 +1,11 @@
+//Menu Button//
+
 function toggleMenu() {
 
     document.getElementById("primaryNav").classList.toggle("hide");
 }
+
+//gets the correct date and format//
 
 (function() {
     
