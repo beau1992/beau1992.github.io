@@ -17,6 +17,8 @@ buildWC(speed,temp);
 
 console.log('My javascript is being read.');
 
+
+
 //displays the menu button//
 
 function toggleMenu(event){
@@ -66,7 +68,10 @@ console.log(day + month + date + year);
 document.addEventListener("DOMContentLoaded", function(){
     let lastMod = document.lastModified;
     document.getElementById("modDate").innerHTML = lastMod;
-    });
+    // The Time Indictor function
+let hour="6";
+timeBall(hour);
+});
     /*WebFont.load({
         google: {
           families: [
@@ -94,3 +99,19 @@ function buildWC(speed, temp) {
     // wc = 'Feels like '+wc+'°F';
     feelTemp.innerHTML = wc;
     }
+
+    // Time Indicator Function
+    function timeBall(hour){
+    // Find all "ball" classes and remove them
+    let x = document.querySelectorAll(".ball");
+    for (let item of x) {
+        console.log(item);
+        item.classList.remove("ball");
+    }
+    
+    // Find all hours that match the parameter and add the "ball" class
+    let hr = document.querySelectorAll(".i"+hour);
+    for (let item of hr){
+        item.classList.add("ball");
+    }
+}
