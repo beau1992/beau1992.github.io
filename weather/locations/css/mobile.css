@@ -93,7 +93,7 @@ main {
 .cityname {
 display: flex;
 flex-direction: column;
-background-color: antiquewhite;
+
 border-radius: 15px;
 margin: .5em;
 }
@@ -124,6 +124,8 @@ margin: .5em;
     margin: .5em;
     border-radius: 15px;
     border-color: black;
+    width: 10em;
+    display: inline-block;
 }
 nav ul {
     list-style-type: none;
@@ -627,3 +629,9 @@ main p {font-size: .95em;}
     color: blue;
     display: inline-block;
 }
+.currrent-condition {
+    background-size: cover;
+    background-image: var(--dynamic-weather-background);
+    border-radius: 15px;
+}
+
