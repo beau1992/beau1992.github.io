@@ -135,8 +135,8 @@ function changeSummaryBackground(currCond) {
    if (width > 475 && width <= 800) {
     conditionIndex += 5;
     console.log(`Updated value of conditionIndex: ${conditionIndex}`);
-  } else if (width > 800) {
-    conditionIndex += 10
+  /*else if (width > 800) {
+    conditionIndex += 10*/
   }
 
   // store paths to specific width images
