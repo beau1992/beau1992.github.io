@@ -27,12 +27,10 @@ console.log('My javascript is being read.');
 function toggleMenu(event){
     const navList = document.querySelector('#navList');
     navList.classList.toggle("mobileNav");
+    document.getElementById("primaryNav").classList.toggle("hide");
   }
 
-function toggleMenu() {
 
-    document.getElementById("primaryNav").classList.toggle("hide");
-}
 
 //Function for showing the date//
 
