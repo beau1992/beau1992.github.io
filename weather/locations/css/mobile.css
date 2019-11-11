@@ -637,4 +637,7 @@ main p {font-size: .95em;}
     background-image: var(--dynamic-weather-background);
     border-radius: 15px;
 }
+.hide{
+    display: none;
+  }
 
