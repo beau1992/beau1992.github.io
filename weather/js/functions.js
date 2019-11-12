@@ -2,7 +2,8 @@
 var pageNav = document.querySelector('#page-nav');
 var statusContainer = document.querySelector('#status');
 var contentContainer = document.querySelector('#main-content');
-
+var locStore = window.localStorage;
+var sessStore = window.sessionStorage;
 /* *************************************
 *  Weather Site JavaScript Functions
 ************************************* */
@@ -212,10 +213,14 @@ function fetchWeatherData(weatherURL){
     // See if it worked, using ticks around the content in the log
     console.log(`fullName is: ${fullName}`);
     // Get the longitude and latitude and combine them to
+    const latLong = p.properties.relativeLocation.geometry.coordinates[1] + ","+ p.properties.relativeLocation.geometry.coordinates[0];
+    console.log(latLong);
     // a comma separated single string
-
+    const prestonData = JSON.stringify({fullName,latLong});
+    locStore.setItem("Preston,ID", prestonData);
     // Create a JSON object containing the full name, latitude and longitude
     // and store it into local storage.
+
 
     // **********  Get the current conditions information  **********
     // As the data is extracted from the JSON, store it into session storage
@@ -233,3 +238,5 @@ function fetchWeatherData(weatherURL){
   statusContainer.innerHTML = 'Sorry, the data could not be processed.';
   })
 }
+var weatherURL="../js/idahoweather.json";
+fetchWeatherData(weatherURL);
