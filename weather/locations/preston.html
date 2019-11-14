@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content= "Beau Black">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title id="page-title">Preston, Idaho</title>
+    <title id="page-title">Preston, Idaho | RRGA</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/weather/locations/css/middle.css"
     media="screen">
@@ -49,34 +49,36 @@
 
 <main id="main-content" class="currrent-condition hide">
     <section class="cityname">
-        <h1>Preston, Idaho</h1>
-        <p>Gps: 45.215, 54.547 </p>
+        <h1 id = "contentHeading">Preston, Idaho</h1>
+        <p id= "latLon">Gps: 45.215, 54.547 </p>
     </section>
     <section class="glance">
-        <p id="degrees">51 &#8457;</p>
-        <h2 id="feel">Feels like <span id="feelTemp">??</span> °F </h2>
-        <p id="high">58&#176;</p><p id="low"> 34&#176;</p>
-        <h3>&#10147; 4.8mph</h3>
+        <p id="currentTemp">51 &#8457;</p>
+        <h2 id="feel">Feels like <span id="feelTemp">??</span></h2>
+        <p id="hiTemp">58&#176;</p><p id="loTemp"> 34&#176;</p>
+        <h3>Wind Speed <span id="speed"></span></h3>
+        <h3>Gusts <span id="gusting"></span></h3>
     </section>
    <div class="flex columns"> 
        <section  class="temperature boxes temp">
-        
+            <h1>Conditions</h1>
         <div id="condcontainer">
-            <section id="cond" class="condition boxes">
+            
+            <section id="condition" class="condition boxes">
                
                 <section id="conumbers">
-                <div id="co1">&#9729;</div>
-                <div id="co2">&#x263C;</div>
-                <div id="co3">&#x263C;</div>
-                <div id="co4">&#9729;</div>
-                <div id="co5">&#9729;</div>
-                <div id="co6">&#9729;</div>
-                <div id="co7">&#9729;</div>
-                <div id="co8">&#9729;</div>
-                <div id="co9">&#x263C;</div>
-                <div id="co10">&#x263C;</div>
-                <div id="co11">&#9729;</div>
-                <div id="co12">&#9729;</div>
+                    <div class="o1">51</div>
+                    <div class="o2">53</div>
+                    <div class="o3">55</div>
+                    <div class="o4">57</div>
+                    <div class="o5">58</div>
+                    <div class="o6">57</div>
+                    <div class="o7">58</div>
+                    <div class="o8">58</div>
+                    <div class="o9">55</div>
+                    <div class="o10">53</div>
+                    <div class="o11">52</div>
+                    <div class="o12">51</div>
                 </section>
                 <section class="inumbers">
                 <div class= "i1 ball">1</div>
@@ -102,23 +104,24 @@
     </section>
     
         <section  class="temperature boxes temp">
-    <div id="precipcontainer">
-        <section id="precip" class="precipitation boxes">
+        <h1>Wind</h1>
+        <div id="windcontainer">
+        <section id="winds" class="precipitation boxes">
             <section id="ponumbers">
-            <div id="po1">20</div>
-            <div id="po2">20</div>
-            <div id="po3">20</div>
-            <div id="po4">20</div>
-            <div id="po5">10</div>
-            <div id="po6">20</div>
-            <div id="po7">20</div>
-            <div id="po8">30</div>
-            <div id="po9">20</div>
-            <div id="po10">10</div>
-            <div id="po11">20</div>
-            <div id="po12">40</div>
+                <div class="o1">51</div>
+                <div class="o2">53</div>
+                <div class="o3">55</div>
+                <div class="o4">57</div>
+                <div class="o5">58</div>
+                <div class="o6">57</div>
+                <div class="o7">58</div>
+                <div class="o8">58</div>
+                <div class="o9">55</div>
+                <div class="o10">53</div>
+                <div class="o11">52</div>
+                <div class="o12">51</div>
             </section>
-            <div id="mid">&#9730;</div>
+            <div id="mid">MPH</div>
             <section class="inumbers">
             <div class="i1 ball">1</div>
             <div class="i2">2</div>
@@ -134,30 +137,31 @@
             <div class="i12">12</div>
             
         </section>
+        <div id="circlep"></div>
         </section>
-            <div id="circlep"></div>
+            
             
     </div>
         </section>
    
    
         <section class="temperature boxes temp">
-         
+         <h1>Temperature</h1>
          <div id="tempcontainer">
-             <section id="temp" class="temperature boxes">
+             <section id="temps" class="temperature boxes">
                  <section id="tonumbers">
-                 <div id="to1">51</div>
-                 <div id="to2">53</div>
-                 <div id="to3">55</div>
-                 <div id="to4">57</div>
-                 <div id="to5">58</div>
-                 <div id="to6">57</div>
-                 <div id="to7">58</div>
-                 <div id="to8">58</div>
-                 <div id="to9">55</div>
-                 <div id="to10">53</div>
-                 <div id="to11">52</div>
-                 <div id="to12">51</div>
+                 <div class="o1">51</div>
+                 <div class="o2">53</div>
+                 <div class="o3">55</div>
+                 <div class="o4">57</div>
+                 <div class="o5">58</div>
+                 <div class="o6">57</div>
+                 <div class="o7">58</div>
+                 <div class="o8">58</div>
+                 <div class="o9">55</div>
+                 <div class="o10">53</div>
+                 <div class="o11">52</div>
+                 <div class="o12">51</div>
                  </section>
                  <div id="tmid">&#8457;</div>
                  <section class ="inumbers">
