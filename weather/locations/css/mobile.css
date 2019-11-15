@@ -176,6 +176,7 @@ nav ul li a:hover {
 
 .hide {display: none;}
 main p {font-size: .95em;}
+.hidden {display: none;}
 
 .ball {
     height: 35px;

@@ -440,5 +440,5 @@ for (let i = 0, x = 12; i < x; i++) {
 }
 // Change the status of the containers
 contentContainer.setAttribute('class', ''); // removes the hide class from main
-statusContainer.setAttribute('class', 'hide'); // hides the status container
+statusContainer.setAttribute('class', 'hidden'); // hides the status container
 }
