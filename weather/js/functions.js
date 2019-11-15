@@ -4,6 +4,8 @@ var statusContainer = document.querySelector('#status');
 var contentContainer = document.querySelector('#main-content');
 var locStore = window.localStorage;
 var sessStore = window.sessionStorage;
+var body = document.querySelector('#body');
+let feelTemp = document.getElementById('feelTemp');
 /* *************************************
 *  Weather Site JavaScript Functions
 ************************************* */
@@ -17,9 +19,9 @@ var sessStore = window.sessionStorage;
     const menuButton = document.querySelector("#menuBtn");
   menuButton.addEventListener('click',toggleMenu);*/
 //variables for wind chill
-let temp = 31;
+/*let temp = 31;
 let speed = 5;
-buildWC(speed,temp);
+buildWC(speed,temp);*/
 
 
 console.log('My javascript is being read.');
@@ -97,7 +99,7 @@ fetchWeatherData(weatherURL);
 
        // Calculate the Windchill
 function buildWC(speed, temp) {
-    let feelTemp = document.getElementById('feelTemp');
+    
    
     // Compute the windchill
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
@@ -112,7 +114,7 @@ function buildWC(speed, temp) {
     // Display the windchill
     console.log(wc);
     // wc = 'Feels like '+wc+'°F';
-    feelTemp.innerHTML = wc;
+    return wc;
     }
 
     // Time Indicator Function
@@ -158,9 +160,16 @@ function changeSummaryImage(currCond) {
   const imgDirPostfix = ")"
 
   // update condition index based on weather status
-  switch (condition) {
+  let weather = "";
+  if (condition.includes("sun")|| condition.includes("clear")){weather = "clear";}
+  else if (condition.includes("cloud")) {weather="cloudy";}
+  else if (condition.includes("fog")) {weather="fog";}
+  else if (condition.includes("rain")) {weather="rain";}
+  else if (condition.includes("snow")) {weather="snow";}
+  console.log(weather);
+  switch (weather) {
     case "clear":
-      conditionIndex += 0;
+      body.classList.add("clear");
       break;
     case "cloudy":
       conditionIndex += 1;
@@ -181,14 +190,14 @@ function changeSummaryImage(currCond) {
   console.log(`Value of conditionIndex: ${conditionIndex}`);
   
   // build image url() CSS variable
-  let imageURL = imgDirPrefix + imgURLS[conditionIndex] + imgDirPostfix;
-  console.log(`imageURL is: ${imageURL}`);
+  /*let imageURL = imgDirPrefix + imgURLS[conditionIndex] + imgDirPostfix;
+  console.log(`imageURL is: ${imageURL}`);*/
 
   // set background image
-  const backgroundImg = document.body.style; // used to access css
+  //const backgroundImg = document.body.style; // used to access css
   // console.log(`backgroundImg: ${backgroundImg}`);
-  backgroundImg.setProperty("--dynamic-weather-background", `${imageURL}`); 
-  console.log(`${imageURL} has been set as the background.`);
+ // backgroundImg.setProperty("--dynamic-weather-background", `${imageURL}`); 
+  //console.log(`${imageURL} has been set as the background.`);
 }
 
 
@@ -343,6 +352,7 @@ let gust = $('#gusting');
 speed.innerHTML = sessStore.getItem('windSpeed');
 gust.innerHTML = sessStore.getItem('windGust');
 // Calculate feel like temp
+console.log(buildWC(39,5.1));
 feelTemp.innerHTML = buildWC(sessStore.getItem('windSpeed'), sessStore.getItem('temperature')) + "°F";
 // **********  Set the Time Indicators  **********
 let thisDate = new Date();

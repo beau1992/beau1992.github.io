@@ -20,7 +20,21 @@ main section picture img {
     justify-content: center;
     
   }
-}
 
+.rain {
+    background-image: url("/weather/images/rain600.jpg");
+      }
+      .snow {
+        background-image: url("/weather/images/snow600.jpg"); 
+    }
+    .fog {
+        background-image: url("/weather/images/fog600.jpg");  
+    }
+    .clear {
+        background-image: url("/weather/images/clear600.jpg");
+    }
+    .cloud {
+        background-image: url("/weather/images/clouds600.jpg");
+    }
 
-   
+} 
