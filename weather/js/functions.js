@@ -162,7 +162,7 @@ function changeSummaryImage(currCond) {
   // update condition index based on weather status
   let weather = "";
   if (condition.includes("sun")|| condition.includes("clear")){weather = "clear";}
-  else if (condition.includes("cloud")) {weather="cloudy";}
+  else if (condition.includes("cloud")) {weather="cloudy";console.log(weather);}
   else if (condition.includes("fog")) {weather="fog";}
   else if (condition.includes("rain")) {weather="rain";}
   else if (condition.includes("snow")) {weather="snow";}
@@ -172,16 +172,16 @@ function changeSummaryImage(currCond) {
       body.classList.add("clear");
       break;
     case "cloudy":
-      conditionIndex += 1;
+        body.classList.add("cloud");
       break;
     case "fog":
-      conditionIndex += 2;
+        body.classList.add("fog");
       break;
     case "rain":
-      conditionIndex += 3;
+        body.classList.add("rain");
       break;
     case "snow":
-      conditionIndex += 4;
+        body.classList.add("snow");
       break;
     default:
       console.log("Error: Weather type is invalid.")
