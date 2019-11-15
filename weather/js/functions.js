@@ -6,6 +6,7 @@ var locStore = window.localStorage;
 var sessStore = window.sessionStorage;
 var body = document.querySelector('#body');
 let feelTemp = document.getElementById('feelTemp');
+let title = document.getElementById('page-title')
 /* *************************************
 *  Weather Site JavaScript Functions
 ************************************* */
@@ -31,8 +32,8 @@ console.log('My javascript is being read.');
 //displays the menu button//
 
 function toggleMenu(event){
-    const navList = document.querySelector('#navList');
-    navList.classList.toggle("mobileNav");
+    /*const navList = document.querySelector('#navList');
+    navList.classList.toggle("mobileNav");*/
     document.getElementById("primaryNav").classList.toggle("hide");
   }
 
@@ -205,7 +206,8 @@ function changeSummaryImage(currCond) {
 *  Fetch Weather Data
 ************************************* */
 function fetchWeatherData(weatherURL){
-  let cityName = 'Preston'; // The data we want from the weather.json file
+  let cityName = title.dataset.city // "soda-springs"'Preston'; // The data we want from the weather.json file
+  console.log(cityName);
   fetch(weatherURL)
   .then(function(response) {
   if(response.ok){
@@ -219,6 +221,7 @@ function fetchWeatherData(weatherURL){
     // data is the full JavaScript object, but we only want the preston part
     // shorten the variable and focus only on the data we want to reduce typing
     let p = data[cityName];
+
 
     // **********  Get the location information  **********
     let locName = p.properties.relativeLocation.properties.city;
