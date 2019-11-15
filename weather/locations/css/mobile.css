@@ -530,7 +530,7 @@ main p {font-size: .95em;}
 }
 .currrent-condition {
     background-size: cover;
-    background-image: var(--dynamic-weather-background);
+    
     border-radius: 15px;
 }
 .hide{
